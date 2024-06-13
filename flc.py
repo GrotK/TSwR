@@ -25,8 +25,8 @@ At the end implement Point2point trajectory generator to move your manipulator t
 """
 #[dla pierwszego linku, dla drugiego linku]
 #traj_gen = ConstantTorque(np.array([1.0, 1.0])[:, np.newaxis])
-traj_gen = Sinusoidal(np.array([1., 1.]), np.array([2., 2.]), np.array([0., 0.]))
-#traj_gen = Poly3(np.array([0., 0.]), np.array([math.pi/4, math.pi/6]), end)
+#traj_gen = Sinusoidal(np.array([1., 1.]), np.array([2., 2.]), np.array([0., 0.]))
+traj_gen = Poly3(np.array([0., 0.]), np.array([math.pi/4, math.pi/6]), end)
 
 
 Q, Q_d, u, T = simulate("PYBULLET", traj_gen, controller, Tp, end)

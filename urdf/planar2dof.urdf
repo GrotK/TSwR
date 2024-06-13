@@ -61,7 +61,7 @@
   <link name="planar2dof/link_2">
     <inertial>
       <origin rpy="0 1.570796326790 0" xyz="0.2 0.0 0.0" />
-      <mass value="2.4" />
+      <mass value="2.0" />
       <inertia ixx="0.03296" ixy="0.00000" ixz="0.00000" iyy="0.03296" iyz="0.00000" izz="0.00192" />
     </inertial>
     <visual>
